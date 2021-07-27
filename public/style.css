@@ -1,0 +1,280 @@
+* {
+  padding: 0px;
+  margin: 0;
+
+  color: white;
+}
+
+body {
+  background-color: black;
+}
+
+.logo {
+  position: absolute;
+  z-index: 3;
+
+  height: 50px;
+  padding: 4vh;
+}
+.page {
+  background-color: darkgray;
+  position: relative;
+
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/page1.jpg);
+  background-size: 100vw;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+}
+
+.navbar {
+  display: flex;
+
+  align-items: center;
+  float: right;
+  background-color: transparent;
+
+  flex-direction: row;
+  height: 10vh;
+}
+
+.media-buttons {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+
+  width: 10vh;
+  height: 100vh;
+
+  background-color: transparent;
+
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: right;
+  align-items: center;
+}
+.btn {
+  padding: 10px;
+  margin: 20px;
+}
+
+.button {
+  z-index: 2;
+  padding: 10px;
+}
+
+.welcome {
+  background-color: transparent;
+  position: relative;
+
+  padding: 30px;
+
+  top: 5vh;
+  left: 10vw;
+
+  width: 40vw;
+  height: 80vh;
+}
+
+/* different buttons */
+.startnow {
+  position: absolute;
+
+  background-color: rgba(100, 39, 39, 0.5);
+
+  padding: 2vh;
+
+  width: 25vh;
+  /* height: 5vh; */
+
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  bottom: 35vh;
+  left: 5vw;
+}
+.learnmore {
+  position: absolute;
+  background-color: rgba(112, 70, 70, 0.123);
+  padding: 2vh;
+
+  width: 25vh;
+
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  right: 5vw;
+  bottom: 35vh;
+}
+
+.nasalogo {
+  position: absolute;
+
+  padding: 2vh 5vw 2vh 5vw;
+  width: 14vw;
+  border-radius: 5px;
+  bottom: 5vw;
+  left: 0vw;
+}
+
+.image01 {
+  position: absolute;
+
+  background-image: url(images/asteroid.png);
+  background-size: 30vw;
+  background-repeat: no-repeat;
+  width: 37vw;
+  height: 80vh;
+
+  top: 25vh;
+  right: 3vw;
+
+  z-index: 3;
+}
+
+.text02 {
+  background-color: transparent;
+  position: relative;
+
+  padding: 30px;
+
+  top: 10vh;
+  margin: auto;
+
+  width: 40vw;
+  height: 80vh;
+}
+
+.startnow2 {
+  position: absolute;
+
+  background-color: rgba(82, 36, 36, 0.829);
+
+  padding: 2vh 4vw 2vh 4vw;
+  text-decoration: none;
+  border-radius: 5px;
+  bottom: 10vh;
+  left: 5vw;
+}
+
+.main_panel {
+  background-color: rgb(51, 50, 53);
+  width: 70vw;
+  height: 100vh;
+}
+
+.right_panel {
+  background-color: rgb(28, 27, 29);
+
+  position: absolute;
+  right: 0vw;
+  top: 0vw;
+  width: 20vw;
+  height: 90vh;
+
+  padding: 5vh 5vw 5vh 5vw;
+  overflow: hidden;
+  z-index: 3;
+}
+.text04 {
+  background-color: transparent;
+  width: 40vw;
+  min-height: 50vh;
+  margin: 10vh 0 0 10vw;
+}
+
+.img04 {
+  margin: auto;
+  width: 80vw;
+  height: 40vh;
+  background-image: url(images/nebula.jpg);
+  background-repeat: no-repeat;
+  background-size: 80vw;
+}
+
+@media screen and (max-width: 500px) {
+  .page {
+    background-size: 280vh;
+    top: 30vh;
+
+    width: 100%;
+    height: 180vh;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    float: none;
+    height: 5vh;
+  }
+  .button {
+    width: 50vw;
+
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+  }
+  .startnow {
+    position: absolute;
+
+    background-color: rgba(100, 39, 39, 0.5);
+
+    bottom: 20vh;
+    left: 5vw;
+  }
+  .learnmore {
+    position: absolute;
+    background-color: rgba(112, 70, 70, 0.123);
+    padding: 2vh;
+
+    left: 5vw;
+    bottom: 10vh;
+  }
+  .image01 {
+    background-size: 100vw;
+
+    width: 100vw;
+    height: 80vh;
+    left: 5vw;
+    top: 110vh;
+
+    z-index: 3;
+  }
+
+  .welcome {
+    top: 5vh;
+    left: 10vw;
+
+    width: 70vw;
+  }
+  .nasalogo {
+    position: absolute;
+
+    /* padding: 2vh 5vw 2vh 5vw; */
+    width: 20vh;
+    border-radius: 5px;
+    bottom: -5vh;
+  }
+  .text02 {
+    background-color: transparent;
+    position: relative;
+
+    width: 80vw;
+  }
+  .startnow2 {
+    left: 30vw;
+    bottom: -10vh;
+  }
+  .right_panel {
+    right: 5vw;
+    top: 100vh;
+    width: 80vw;
+    height: 70vh;
+    margin: auto;
+    padding: 5vh;
+  }
+}
